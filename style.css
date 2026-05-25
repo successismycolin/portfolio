@@ -1,3 +1,8 @@
+body {
+    background-color: rgb(249, 244, 228);
+    color: rgb(63, 38, 4);
+}
+
 #box {
     border: 2px solid black;
 }
@@ -10,11 +15,24 @@
     grid-template-columns: 1vw;
     grid-template-rows: 1fr 7fr;
     grid-template-areas: 
-    "box-1 box-1 box-1 box-1 box-1"
-    "box-2 box-2 box-3 box-3 box-3"
-    "box-2 box-2 box-3 box-3 box-3"
+    "box-1 box-1 box-1 box-1"
+    "box-2 box-2 box-3 box-3"
+    "box-2 box-2 box-3 box-3"
     ;
     gap: 0.3em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3em;
+}
+.navbar a {
+    /* letter-spacing: 0.05em; */
+    margin-left: 2em;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .burger {
