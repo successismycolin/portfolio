@@ -2,16 +2,23 @@ body {
     background-color: rgb(249, 244, 228);
     color: rgb(63, 38, 4);
     font-family: "Red Hat Display", sans-serif;
+    position: absolute;
 }
 
-#box {
+/* #box {
     border: 2px solid black;
-}
+} */
+
 .header {
     min-height: 60px;
     max-height: 60px;
     position: sticky;
     top: 0;
+    border-top: 3px solid black;
+    border-bottom: 5px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-radius: 5px;
 }
 .grid-container {
     display: grid;
