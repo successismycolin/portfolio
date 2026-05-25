@@ -1,4 +1,21 @@
-
+#box {
+    border: 2px solid black;
+}
+.header {
+    min-height: 60px;
+    max-height: 60px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1vw;
+    grid-template-rows: 1fr 7fr;
+    grid-template-areas: 
+    "box-1 box-1 box-1 box-1 box-1"
+    "box-2 box-2 box-3 box-3 box-3"
+    "box-2 box-2 box-3 box-3 box-3"
+    ;
+    gap: 0.3em;
+}
 
 .burger {
     border: 2px solid black;
