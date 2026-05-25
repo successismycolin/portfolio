@@ -11,7 +11,6 @@ body {
     min-height: 60px;
     max-height: 60px;
     position: sticky;
-        /* position: sticky; */
     top: 0;
 }
 .grid-container {
@@ -24,18 +23,30 @@ body {
     "box-2 box-2 box-3 box-3"
     ;
     gap: 0.3em;
-    /* position: relative; */
+
+    @media (max-width:550px) {
+        display: grid;
+        grid-template-columns: 1vw;
+        grid-template-rows: 1fr 7fr;
+        grid-template-areas: 
+        "box-1 box-1 box-1 box-1"
+        "box-2 box-2 box-2 box-2"
+        "box-2 box-2 box-2 box-2"
+        "box-3 box-3 box-3 box-3"
+        
+        ;
+        gap: 0.3em;
+    }
 }
 
 .navbar {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     padding: 0.3em;
     position: sticky;
+    background-color: rgb(249, 244, 228);
 }
 .navbar a {
-    /* letter-spacing: 0.05em; */
     margin-left: 1em;
     text-decoration: none;
     font-weight: 500;
@@ -43,9 +54,23 @@ body {
 .navlinks {
     margin-left: auto;
 }
+.image{
+    @media (max-width:550px) {
+        align-content: center;
+        justify-content: center;
+        display: flex;
+    }
+}
+.myimg {
+    width: 10px;
+    height: 10px;
+    align-content: center;
+    border-radius: 100px;
 
-.burger {
-    border: 2px solid black;
-    max-width: 25px;
-    margin: 5px;
+    @media (max-width:550px) {
+        align-content: center;
+        justify-content: center;
+        display: flex;
+    }
+
 }
