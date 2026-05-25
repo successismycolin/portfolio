@@ -1,6 +1,7 @@
 body {
     background-color: rgb(249, 244, 228);
     color: rgb(63, 38, 4);
+    font-family: "Red Hat Display", sans-serif;
 }
 
 #box {
@@ -9,6 +10,9 @@ body {
 .header {
     min-height: 60px;
     max-height: 60px;
+    position: sticky;
+        /* position: sticky; */
+    top: 0;
 }
 .grid-container {
     display: grid;
@@ -20,19 +24,24 @@ body {
     "box-2 box-2 box-3 box-3"
     ;
     gap: 0.3em;
+    /* position: relative; */
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     padding: 0.3em;
+    position: sticky;
 }
 .navbar a {
     /* letter-spacing: 0.05em; */
-    margin-left: 2em;
+    margin-left: 1em;
     text-decoration: none;
     font-weight: 500;
+}
+.navlinks {
+    margin-left: auto;
 }
 
 .burger {
